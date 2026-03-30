@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="red"> 
+    <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="style.css">
+    <title>Page title</title>
+</head>
+<body>
+   <header class="header-title">
+        <div class="main-head">
+            <p>The Weather Stats</p>
+        </div>
+        <div class="humber-place">
+            <div class="humber-btn" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="nav-menu overlay">
+            <nav class="menu-card">
+                <div class="text-home">
+                    <p class="selc-btn">Home</p>
+                </div>
+                <div class="text-home">
+                    <p class="selc-btn">About</p>
+                </div>
+                <div class="text-home">
+                    <p class="selc-btn">Contents</p>
+                </div>
+                <div class="btn-home">
+                    <button class="confirm-btn" id="con-btn">
+                        Confirm 
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <div class="input_place">
+            <input id="input" type="text" placeholder="မြို့နာမည်ရေးပါ။" aria-label="Search Bar">
+            <button id="city-search">
+                Search 
+            </button>
+        </div>
+    </header>
+    
+    <main class="result-box">
+        <section class="suggestion-box" id="suggestion-list-box">
+            
+        </section> 
+        <section id="city-response">
+            
+        </section>
+    </main>
+    <script src="config.js"></script>
+    <script src="main.js" ></script>
+    
+</body>
+</html>

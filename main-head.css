@@ -1,0 +1,102 @@
+/* .1 Started */
+/*<========ခေါင်းစဉ်နဲ့ nav bar ရဲ့မိဘ=========>*/
+.main-head{
+   
+   /* .1.1 Started */
+/*<============ ခေါင်းစဉ်စာသား ============>*/
+    grid-column: span 12;
+    grid-row: 1 / 2;
+    white-space: nowrap;
+    padding-top: 2%;
+    padding-bottom: 0;
+    padding-left: 3%;
+    font-size: 20px;
+    font-weight: 700;
+    /* .1.1 Ended */
+    
+    
+    background-color: rgba(18,23,41,0.7);
+    height: 30px;
+    width: 100%;
+    
+
+}
+/* .1 Ended */
+
+/* .2 started */
+/*<===== menu btn အတွက် နေရာချခြင်း ======>*/
+.humber-place{
+  /* background-color: ghostwhite; */
+    
+    height: 4%; /*နေရာချခြင်း*/
+    width: 10%;
+    margin: 0px;
+    
+/* .2.1 Started */
+/*<== Flexနှင့် content များကို အလယ်ပို့ခြင်း ==>*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* 2.1 Ended */
+
+/* .2.2 Started */
+/*<= Header-title မှrelative နှင့်နေရာချခြင်း =>*/ 
+    position: absolute;
+    right: 5px;
+    top: 15px;
+/* .2.2 Ended */
+    
+}
+/* .2 Ended */
+
+/* .3 Started */
+/*<====== Menuအတွက် ပုံစံပြုလုပ်ခြင်း-၁ ======>*/
+.humber-btn{
+
+/* 3.1 Started */
+/*<========= အရောင်နှင့် ပုံစံအတွက် =========>*/
+    background-color: rgba(10, 15, 30, 0.8);
+    width: 35px;
+    height: 25px;
+    
+    border: 4px solid rgba(0, 242, 255, 0.5);
+    border-radius: 8px;
+/* .3.1 Ended */
+
+/* .3.2 Started */
+/*<======= span line များနေရာချခြင်း =======>*/  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/* .3.2 Ended */
+
+    cursor: pointer;
+    
+    z-index: 10001;
+    
+}
+/* .3 Ended */
+
+/* .4 Started */
+/*<========= span lines ဖော်စံချခြင်း ========>*/
+.humber-btn > span{
+    background-color: white;
+    width: 70%;
+    height: 23%;
+    margin: 2%;    
+    border-radius: 2px;   
+    
+}
+/* .4 Ended */
+
+.humber-btn:active{
+    transform: scale(0.8);
+}
+
+
+.main-head > p{
+    text-shadow: 0 0 4px white;
+}
+
+

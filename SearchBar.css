@@ -1,0 +1,58 @@
+.input_place{
+    position: absolute;
+    top: 34px;
+    left: 0px;
+    
+    width: 100%;
+}
+
+.input_place > input{
+    width: 83%; /* input ရဲ့ဘေးမှာ button ကိုထားလို့ရအောင် 83သာပေးထားသည်။ */
+    padding: 1%; /* input ထဲစာရေးတဲ့အခါ ပွင့်လင်းမြင်သာအောင်*/
+    background-color: rgba(6,7,89,0.6);
+    border: 1px solid rgba(30,31,86,1);
+    border-radius: 4px;
+    
+    color: white;
+}
+
+.input_place > input::placeholder{
+    color: ghostwhite;
+    opacity: 0.5;
+    
+}
+
+.input_place > input:focus{
+    outline: none; /* input ရဲ့ original အဝါရောင်လိူင်းကိုဖျောက်ဖို့ */
+    
+}
+
+#city-search{
+    /*button ထဲက content ကို ကျယ်ကျယ်မြင်ရအောင် */
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    font-size: 16px;
+    padding: 1%;
+    width: 15%;
+    
+    
+    /*button ကိုအလှဆင်ခြင်း*/
+    background-color: rgba(81,92,137,1);
+    border-radius: 5px;
+    text-shadow: 0 0 4px ghostwhite;
+    border: 1px solid rgb(157,130,137);
+    box-shadow: inset 0px 0px 3px white;
+}
+
+.input_place > input,
+.input_place > button{
+    vertical-align: middle; 
+}
+
+
+#city-search:active{
+    transform: scale(0.95);
+    translation: all 0.3s ease-in-out;
+    background-color: rgba(0,0,0,0.2);
+}

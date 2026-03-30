@@ -1,0 +1,91 @@
+.suggestion-box{
+    height: 100vh;
+    width: 100vw;
+    margin-top: -17%;
+    margin-left: 0%;
+    margin-right: 0%;
+    border: 1px solid black;
+    border-radius: 4px;
+    z-index: 7;
+    
+    position: fixed;
+    left: 0px;
+    top: 120px;
+    
+    /* မြို့နာမည်တွေအများကြီးကျလာရင် layout မပျက်အောင် */
+    overflow-y: auto;    
+    max-height: 90vh;
+}
+
+/* ကျလာတဲ့ div တွေကိုပုံဖော်မယ် */
+.suggestion-list{
+    border: 1px solid black;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.suggestion-list:active{
+    background-color: rgba(0,98,165,0.7);
+    translation: all 0.5s ease ease-in-out;
+    transform: scale(0.95);
+}
+
+
+/* ရှာဖွေနေသည် စာသားရဲ့ နေရာ */
+#suggestionContent{
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-top: 60%;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ဒေတာမရှိပါ စာသားရဲ့ နေရာ */
+#suggestionContent-d{
+    padding-left: 40%;
+    padding-right: 40%;
+    padding-top: 60%;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* =========ရာသီဉတု အခြေအနေ အသေးစိတ်ပိုင်း============*/
+
+
+#city-response{
+    width: 100vw;
+    height: 100vh;
+    margin-top: -33%;
+    background-color: RGB(84,106,150);
+    position: fixed;
+    z-index: 111000;
+    display: none;
+}
+
+#city-response.active{
+    display: block;
+}
+
+.city-head{
+weight: 600;
+
+display: flex;
+justify-content: center;
+font-size: 30px;
+margin-top: 5%;
+width: 100%;
+}
+
+.temp-div{
+    width: 100%;
+    padding: 4%;
+    white-space: nowrap;
+    max-height: 8%;
+    font-size: 20px;
+    weight: 600;
+}
